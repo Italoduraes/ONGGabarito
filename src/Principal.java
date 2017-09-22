@@ -31,12 +31,21 @@ public class Principal {
 		ArrayList<Integer> PostosVegetarianos = bds.getPostosVegetarianos();
 		
 		for (int i = 0; i < PostosVegetarianos.size(); i++) {
-			System.out.println(PostosVegetarianos.get(i));
+			//System.out.println(PostosVegetarianos.get(i));
 		} 
 		
+		// 1.1 QUESTÃO
 		
+			//System.out.println(bds.getONGQueAtende(900));
 		
+		// 1.2 QUESTÃO
 		
+		ArrayList<Posto> ONGQueAtendeGeral =bds.getONGQueAtendeGeral(0, 0, 0);
+		
+		for (int i = 0; i <ONGQueAtendeGeral.size(); i++) {
+			System.out.println(ONGQueAtendeGeral.get(i).getOng().getNome());
+		}
+		 
 		
 		
 		

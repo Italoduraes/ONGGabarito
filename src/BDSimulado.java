@@ -156,9 +156,26 @@ public class BDSimulado {
 		 return resultado;
 	 }
 	 
+	 // 1.2) mesmo q 1.1
 	 
-	 
-	 
+	 public ArrayList<Posto> getONGQueAtendeGeral ( int qtdeHomens, int qtdeMulheres , int qtdeCriancas) {
+		 
+		ArrayList<Posto> resultado = new ArrayList<Posto>(); 
+		 
+		 double csdeCriancas =  qtdeCriancas * 0.15;
+		 double csdeHomens =   qtdeHomens * 0.05;
+		 double csdeMulheres =  qtdeMulheres * 0.03;
+		 double somadeqt = csdeCriancas + csdeHomens + csdeMulheres;
+		 
+		 for (int i = 0; i < this.Posto.size(); i++) {
+			if (this.Posto.get(i).getCapacidade() >= somadeqt ) {
+			resultado.add(this.Posto.get(i));	
+			}
+		}
+		 
+		 
+		 return resultado;
+	 }
 
 
 
