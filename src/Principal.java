@@ -17,7 +17,7 @@ public class Principal {
 		   //System.out.println(bds.getInfoONG("Coma bem"));
 	
 		// 3 QUESTAÕ
-		   //System.out.println(bds.getNumONGPorEstado("RJ"));
+		  // System.out.println(bds.getNumONGPorEstado("DF"));
 		
 	   // 4 QUESTÃO
           ArrayList<Posto> PostosPorCapacidade = bds.getPostoPorCapacidade(1000);
@@ -40,7 +40,7 @@ public class Principal {
 		
 		// 1.2 QUESTÃO
 		
-		ArrayList<Posto> ONGQueAtendeGeral =bds.getONGQueAtendeGeral(0, 0, 0);
+		ArrayList<Posto> ONGQueAtendeGeral =bds.getONGQueAtendeGeral(1, 5, 0);
 		
 		for (int i = 0; i <ONGQueAtendeGeral.size(); i++) {
 			System.out.println(ONGQueAtendeGeral.get(i).getOng().getNome());

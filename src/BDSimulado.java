@@ -176,6 +176,19 @@ public class BDSimulado {
 		 
 		 return resultado;
 	 }
+	 
+	 // 1.3 B ) 
+	 public int numPostoGlutenOULactose( String nomeONG){
+		 int resultado = 0;
+		 
+		 //pecorrer a lista de postos
+		 for (int i = 0; i <this.Posto.size(); i++) {
+			if(this.Posto.get(i).getOng().getNome().equals(nomeONG) && this.Posto.get(i).isSemGluten() || this.Posto.get(i).isSemLactose()){
+				resultado++;
+			}
+		}		 
+		 return resultado;
+	 }
 
 
 
